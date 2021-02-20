@@ -15,13 +15,13 @@ export default {
     }
   },
   methods: {
-      increment() {
-        // 子から親への送り口$emit("〇〇",　第2引数),$emitでカスタムイベントが作れる
-          this.$emit("my-click", this.totalNumber + 1);
-      }
+    increment() {
+      this.$emit("my-click", this.totalNumber + 1);
+    }
   }
 };
 </script>
+
 
 <style scoped>
   div {
